@@ -1,6 +1,6 @@
 
 # mysqlbackup
-A simple script for backing up sql databases in linux
+A simple script for backing up sql databases in linux, zipping the file and deleting files in the directory older than 30 days
 
 ## Getting Started
 
