@@ -1,28 +1,32 @@
 
-mysqlbackup
-
+# mysqlbackup
 A simple script for backing up sql databases in linux
-Getting Started
+
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-Prerequisites
 
+### Prerequisites
+
+```
 zip
 unzip
-
-Installing
+```
+###Installing
 
 Install zip and unzip packages using your preferred package manager.
 Copy the script into /etc/cron.daily/
 Set the script as an executable using chmod +x /etc/cron.daily/mysqlbackup
 
-Version 0.1
+##Version 0.1
 
 Initial Release
+
+##Authors
 Authors
 
-    Mitch Bradford - Github
+* **Mitch Bradford** - [Github](https://github.com/mitchbradford)
 
-License
+##License
 
 This project is licensed under the MIT License.
