@@ -12,21 +12,21 @@ These instructions will get you a copy of the project up and running on your loc
 zip
 unzip
 ```
-###Installing
+### Installing
 
 Install zip and unzip packages using your preferred package manager.
 Copy the script into /etc/cron.daily/
 Set the script as an executable using chmod +x /etc/cron.daily/mysqlbackup
 
-##Version 0.1
+## Version 0.1
 
 Initial Release
 
-##Authors
+## Authors
 Authors
 
 * **Mitch Bradford** - [Github](https://github.com/mitchbradford)
 
-##License
+## License
 
 This project is licensed under the MIT License.
