@@ -1,0 +1,18 @@
+#!/bin/bash
+# Make sure you've installed zip and unzip packages
+
+DATE=`date +%Y%m%d`
+
+# Backup SQL Database
+# Replace $admin with the SQL backup username
+# Replace $password with the SQL backup user password
+# My backup directory is /mnt/backups replace as appropriate
+mysqldump --user=$admin --password=$password --lock-tables --all-databases > /mnt/backups/mariadb-backup-$DATE.sql
+
+
+# Zip the backup and remove the non-zipped file
+zip /mnt/backups/mariadb-backup-$DATE.zip /mnt/backups/mariadb-backup-$DATE.sql
+rm /mnt/backups/mariadb-backup-$DATE.sql
+
+# Delete files in the backup directory older than 30 days
+find /mnt/backups/* -type f -mtime +30 -delete
